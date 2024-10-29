@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
-start = "python -c 'import preload; import app.main; app.main'"
+start = "python -c 'import config.preload; import app.main; app.main'"
 lint = "sh -c 'black ./app && isort ./app'"
 
 [packages]
