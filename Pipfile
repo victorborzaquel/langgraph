@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+start = "python -c 'import preload; import app.main; app.main'"
+lint = "sh -c 'black ./app && isort ./app'"
+
+[packages]
+langgraph = "*"
+langchain = "*"
+langchain-core = "*"
+langchain-openai = "*"
+langchain-community = "*"
+ipython = "*"
+ipykernel = "*"
+duckduckgo-search = "*"
+
+[dev-packages]
+isort = "*"
+black = "*"
+python-dotenv = "*"
+ipykernel = "*"
+
+[requires]
+python_version = "3.12"
